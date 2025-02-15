@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Header from "./header/header";
 import Cards from "./Card/cards";
 import Courses from "./Courses/Courses";

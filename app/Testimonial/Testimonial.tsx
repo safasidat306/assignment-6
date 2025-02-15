@@ -22,7 +22,7 @@ const Testimonial = () => {
           <div key={index} className="border border-black p-6 rounded-lg flex flex-col items-center">
             <div className="pb-[2px]"><Rating /></div>
             <p className="text-center text-[18px] leading-[27px] mt-4">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.&quot;
             </p>
             <div className="flex items-center gap-4 mt-6">
               <Image src={testimonial.img} alt={testimonial.name} height={56} width={56} className="rounded-full" />

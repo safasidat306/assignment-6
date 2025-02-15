@@ -5,7 +5,7 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
 import React from "react";
 
 
-export const FacebookIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+export const FacebookIcon: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -23,7 +23,7 @@ export const FacebookIcon: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const InstaIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+export const InstaIcon: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -47,7 +47,7 @@ export const InstaIcon: React.FC<IconProps> = ({ className, ...rest }) => (
 
 );
 
-export const LinkedInIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+export const LinkedInIcon: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -65,7 +65,7 @@ export const LinkedInIcon: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const TwitterIcon: React.FC<IconProps> = ({ className, ...rest }) => (
+export const TwitterIcon: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -82,14 +82,14 @@ export const TwitterIcon: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const Logo : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="131" height="42" viewBox="0 0 131 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo : React.FC<IconProps> = () => (<svg width="131" height="42" viewBox="0 0 131 42" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M15.7929 9.59521V9.59626C15.776 9.62534 12.2955 15.6292 7.95067 22.9595C3.59532 30.3077 0 36.1906 0 36.1906L12.3315 36.1365L12.3323 36.1364L12.3297 36.1459C18.3172 36.03 23.7182 32.0934 25.3119 26.1453C25.8102 24.286 25.8853 22.4143 25.5964 20.6255C24.8043 15.3582 20.9149 11.0745 15.7929 9.59521Z" fill="black"/>
   <path d="M22.6077 5.80933V5.81037C22.5908 5.83945 19.1102 11.8433 14.7654 19.1736C10.4101 26.5218 6.81476 32.4047 6.81476 32.4047L19.1462 32.3506L19.147 32.3505L19.1445 32.36C25.132 32.2441 30.5329 28.3075 32.1267 22.3594C32.6249 20.5001 32.7001 18.6284 32.4111 16.8396C31.619 11.5724 27.7297 7.28859 22.6077 5.80933Z" fill="#10F2C5"/>
   <path d="M48.6479 30H42.1854V11.7696H48.7014C50.5351 11.7696 52.1136 12.1346 53.437 12.8645C54.7603 13.5885 55.7781 14.63 56.4902 15.989C57.2083 17.3479 57.5673 18.974 57.5673 20.867C57.5673 22.766 57.2083 24.398 56.4902 25.7629C55.7781 27.1278 54.7544 28.1752 53.4192 28.9051C52.0899 29.635 50.4995 30 48.6479 30ZM46.0398 26.6975H48.4877C49.6271 26.6975 50.5855 26.4958 51.3629 26.0922C52.1462 25.6828 52.7338 25.0507 53.1254 24.1962C53.523 23.3357 53.7218 22.226 53.7218 20.867C53.7218 19.5199 53.523 18.4191 53.1254 17.5645C52.7338 16.71 52.1492 16.081 51.3718 15.6774C50.5944 15.2739 49.636 15.0721 48.4966 15.0721H46.0398V26.6975ZM65.3895 30.2225C64.351 30.2225 63.4104 29.9555 62.5677 29.4214C61.731 28.8814 61.0663 28.0891 60.5738 27.0447C60.0872 25.9943 59.8439 24.7066 59.8439 23.1814C59.8439 21.6147 60.0961 20.3122 60.6005 19.2736C61.1049 18.2292 61.7755 17.4488 62.6122 16.9325C63.4549 16.4103 64.3777 16.1492 65.3806 16.1492C66.1461 16.1492 66.7841 16.2798 67.2944 16.5409C67.8107 16.796 68.2261 17.1165 68.5407 17.5022C68.8611 17.882 69.1044 18.2559 69.2706 18.6238H69.3863V11.7696H73.1695V30H69.4308V27.8102H69.2706C69.0926 28.19 68.8403 28.5669 68.514 28.9407C68.1935 29.3086 67.7751 29.6143 67.2588 29.8576C66.7485 30.1009 66.1254 30.2225 65.3895 30.2225ZM66.5912 27.2049C67.2025 27.2049 67.7188 27.0388 68.1401 26.7064C68.5674 26.3682 68.8938 25.8964 69.1193 25.2911C69.3507 24.6858 69.4664 23.9766 69.4664 23.1636C69.4664 22.3506 69.3537 21.6444 69.1282 21.0451C68.9027 20.4457 68.5763 19.9828 68.149 19.6564C67.7217 19.33 67.2025 19.1668 66.5912 19.1668C65.9681 19.1668 65.4429 19.336 65.0157 19.6742C64.5884 20.0125 64.265 20.4813 64.0454 21.0807C63.8258 21.68 63.716 22.3743 63.716 23.1636C63.716 23.9588 63.8258 24.662 64.0454 25.2733C64.2709 25.8786 64.5943 26.3533 65.0157 26.6975C65.4429 27.0358 65.9681 27.2049 66.5912 27.2049ZM87.6634 20.2261L84.1918 20.4397C84.1324 20.143 84.0049 19.876 83.809 19.6386C83.6132 19.3953 83.355 19.2024 83.0346 19.06C82.7201 18.9116 82.3432 18.8375 81.9041 18.8375C81.3166 18.8375 80.8211 18.9621 80.4175 19.2113C80.014 19.4546 79.8122 19.781 79.8122 20.1905C79.8122 20.5169 79.9428 20.7928 80.2039 21.0183C80.465 21.2439 80.9131 21.4248 81.548 21.5613L84.0227 22.0598C85.352 22.3328 86.343 22.7719 86.9958 23.3773C87.6486 23.9826 87.9749 24.7778 87.9749 25.7629C87.9749 26.659 87.7109 27.4453 87.1827 28.1218C86.6605 28.7983 85.9424 29.3265 85.0285 29.7062C84.1206 30.0801 83.0732 30.267 81.8863 30.267C80.0763 30.267 78.6343 29.8902 77.5601 29.1366C76.492 28.377 75.8659 27.3444 75.6819 26.0388L79.4117 25.843C79.5244 26.3949 79.7974 26.8162 80.2306 27.107C80.6638 27.3918 81.2187 27.5343 81.8952 27.5343C82.5598 27.5343 83.0939 27.4067 83.4975 27.1515C83.9069 26.8904 84.1146 26.5551 84.1206 26.1456C84.1146 25.8014 83.9693 25.5196 83.6844 25.3C83.3996 25.0745 82.9604 24.9024 82.367 24.7837L79.9992 24.3119C78.6639 24.0449 77.6699 23.582 77.0172 22.9233C76.3703 22.2646 76.0469 21.4248 76.0469 20.4041C76.0469 19.5259 76.2843 18.7692 76.759 18.1342C77.2397 17.4993 77.9132 17.0097 78.7797 16.6655C79.652 16.3213 80.6727 16.1492 81.8418 16.1492C83.5687 16.1492 84.9277 16.5142 85.9187 17.2441C86.9157 17.974 87.4972 18.968 87.6634 20.2261ZM96.5227 35.4121C95.2942 35.4121 94.2409 35.243 93.3626 34.9047C92.4903 34.5724 91.7959 34.1184 91.2796 33.5428C90.7634 32.9672 90.4281 32.3203 90.2738 31.6023L93.781 31.1305C93.8878 31.4035 94.0569 31.6587 94.2884 31.896C94.5198 32.1334 94.8254 32.3233 95.2052 32.4657C95.591 32.6141 96.0598 32.6883 96.6117 32.6883C97.4365 32.6883 98.116 32.4865 98.6501 32.083C99.1901 31.6854 99.4602 31.0177 99.4602 30.0801V27.5788H99.2999C99.1338 27.9586 98.8845 28.3176 98.5522 28.6559C98.2199 28.9941 97.7926 29.2701 97.2704 29.4837C96.7482 29.6973 96.1251 29.8042 95.4011 29.8042C94.3744 29.8042 93.4398 29.5668 92.5971 29.092C91.7603 28.6114 91.0927 27.8785 90.5942 26.8934C90.1017 25.9023 89.8554 24.6502 89.8554 23.1369C89.8554 21.588 90.1076 20.2944 90.612 19.2558C91.1165 18.2173 91.787 17.4399 92.6238 16.9236C93.4665 16.4073 94.3893 16.1492 95.3922 16.1492C96.1577 16.1492 96.7986 16.2798 97.3149 16.5409C97.8312 16.796 98.2466 17.1165 98.5611 17.5022C98.8816 17.882 99.1278 18.2559 99.2999 18.6238H99.4424V16.3272H103.208V30.1335C103.208 31.2967 102.923 32.2699 102.353 33.0532C101.783 33.8366 100.994 34.4241 99.9854 34.8157C98.9824 35.2133 97.8282 35.4121 96.5227 35.4121ZM96.6028 26.9557C97.214 26.9557 97.7303 26.8043 98.1516 26.5017C98.5789 26.1931 98.9053 25.754 99.1308 25.1843C99.3622 24.6086 99.478 23.9202 99.478 23.1191C99.478 22.318 99.3652 21.6237 99.1397 21.0361C98.9142 20.4427 98.5878 19.9828 98.1605 19.6564C97.7333 19.33 97.214 19.1668 96.6028 19.1668C95.9797 19.1668 95.4545 19.336 95.0272 19.6742C94.5999 20.0065 94.2765 20.4694 94.0569 21.0629C93.8374 21.6563 93.7276 22.3417 93.7276 23.1191C93.7276 23.9084 93.8374 24.5908 94.0569 25.1665C94.2824 25.7362 94.6059 26.1783 95.0272 26.4928C95.4545 26.8014 95.9797 26.9557 96.6028 26.9557ZM110.017 22.0954V30H106.225V16.3272H109.839V18.7396H110C110.302 17.9443 110.81 17.3153 111.522 16.8524C112.234 16.3836 113.097 16.1492 114.112 16.1492C115.062 16.1492 115.889 16.3569 116.596 16.7723C117.302 17.1877 117.851 17.7812 118.242 18.5526C118.634 19.3182 118.83 20.232 118.83 21.2943V30H115.038V21.9708C115.044 21.1341 114.83 20.4813 114.397 20.0125C113.964 19.5377 113.367 19.3003 112.608 19.3003C112.097 19.3003 111.646 19.4101 111.255 19.6297C110.869 19.8493 110.566 20.1697 110.347 20.5911C110.133 21.0065 110.023 21.5079 110.017 22.0954ZM121.819 30V16.3272H125.495V18.7128H125.637C125.887 17.8642 126.305 17.2233 126.892 16.7901C127.48 16.351 128.157 16.1314 128.922 16.1314C129.112 16.1314 129.317 16.1433 129.536 16.167C129.756 16.1907 129.949 16.2234 130.115 16.2649V19.6297C129.937 19.5763 129.691 19.5288 129.376 19.4873C129.061 19.4457 128.774 19.425 128.513 19.425C127.955 19.425 127.456 19.5466 127.017 19.7899C126.584 20.0273 126.24 20.3596 125.985 20.7869C125.735 21.2142 125.611 21.7067 125.611 22.2646V30H121.819Z" fill="black"/>
   </svg>
 );  
 
-export const Logo1 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo1 : React.FC<IconProps> = () => (<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M14.3334 30.0001H17.6934C18.9734 30.0001 19.8 29.0934 19.56 27.9867L19.0133 25.5735H13.0133L12.4667 27.9867C12.2267 29.0267 13.1334 30.0001 14.3334 30.0001Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M19.0134 25.5602L21.3201 23.5069C22.6134 22.3602 22.6667 21.5601 21.6401 20.2668L17.5734 15.1069C16.7201 14.0269 15.3201 14.0269 14.4667 15.1069L10.4001 20.2668C9.37341 21.5601 9.3734 22.4002 10.7201 23.5069L13.0267 25.5602" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M16.0134 14.8269V18.2003" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -102,7 +102,7 @@ export const Logo1 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo2 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo2 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M3.33331 13.3332V18.6665C3.33331 21.3332 4.66665 22.6665 7.33331 22.6665H9.23998C9.73331 22.6665 10.2266 22.8132 10.6533 23.0665L14.5466 25.5065C17.9066 27.6132 20.6666 26.0799 20.6666 22.1199V9.87988C20.6666 5.90655 17.9066 4.38655 14.5466 6.49322L10.6533 8.93321C10.2266 9.18655 9.73331 9.33322 9.23998 9.33322H7.33331C4.66665 9.33322 3.33331 10.6665 3.33331 13.3332Z" stroke="#292D32" strokeWidth="1.5"/>
   <path d="M24.6666 10.6667C27.04 13.8267 27.04 18.1734 24.6666 21.3334" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M27.1066 7.33325C30.96 12.4666 30.96 19.5333 27.1066 24.6666" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -110,7 +110,7 @@ export const Logo2 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo3 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo3 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M4.33331 23.9734L7.7333 23.9867C8.94663 23.9867 10.08 23.3867 10.7466 22.3867L19.2667 9.61341C19.9333 8.61341 21.0666 8.00006 22.28 8.0134L28.3467 8.04009" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M25.6666 26.6401L28.3333 23.9734" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M12.1867 11.4933L10.7466 9.49332C10.0666 8.54665 8.97329 7.98666 7.81329 7.99999L4.33331 8.01334" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -120,7 +120,7 @@ export const Logo3 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo4 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo4 : React.FC<IconProps> = () => (<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M16 25.3334C20.4133 25.3334 24 21.7467 24 17.3334V10.6667C24 6.25341 20.4133 2.66675 16 2.66675C11.5867 2.66675 8 6.25341 8 10.6667V17.3334C8 21.7467 11.5867 25.3334 16 25.3334Z" stroke="#292D32" strokeWidth="1.5"  strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M4 14.6667V17.3334C4 23.9601 9.37333 29.3334 16 29.3334C22.6267 29.3334 28 23.9601 28 17.3334V14.6667" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M12.1467 9.97324C14.52 9.10658 17.1067 9.10658 19.48 9.97324" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -128,7 +128,7 @@ export const Logo4 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   </svg>  
 );  
 
-export const Logo5 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo5 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M18.6666 15.9999C18.6666 20.2399 15.24 23.6666 11 23.6666C6.75998 23.6666 3.33331 20.2399 3.33331 15.9999C3.33331 11.7599 6.75998 8.33325 11 8.33325" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M13.9999 16C13.9999 11.5867 17.5866 8 21.9999 8C26.4133 8 29.9999 11.5867 29.9999 16C29.9999 20.4133 26.4133 24 21.9999 24" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   </svg>  
@@ -136,7 +136,7 @@ export const Logo5 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo6 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo6 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M23.3734 13.9334L28.3333 8.97339L23.3734 4.01343" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M4.33331 8.97339H28.3333" stroke="#292D32"strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M9.29327 18.0667L4.33331 23.0267L9.29327 27.9867" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -156,7 +156,7 @@ export const Logo7 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo8 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo8 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M30 22.32V6.22672C30 4.62672 28.6933 3.44005 27.1066 3.57338H27.0266C24.2266 3.81338 19.9733 5.24005 17.6 6.73338L17.3733 6.88005C16.9866 7.12005 16.3466 7.12005 15.96 6.88005L15.6266 6.68005C13.2533 5.20005 9.01331 3.78672 6.21331 3.56005C4.62665 3.42672 3.33331 4.62671 3.33331 6.21338V22.32C3.33331 23.6 4.37331 24.8 5.65331 24.96L6.03998 25.0134C8.93331 25.4 13.4 26.8667 15.96 28.2667L16.0133 28.2934C16.3733 28.4934 16.9466 28.4934 17.2933 28.2934C19.8533 26.88 24.3333 25.4 27.24 25.0134L27.68 24.96C28.96 24.8 30 23.6 30 22.32Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M16.6666 7.31995V27.3199" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M10.9999 11.3199H7.99994" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -165,7 +165,7 @@ export const Logo8 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Logo9 : React.FC<IconProps> = ({ className, ...rest }) => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const Logo9 : React.FC<IconProps> = () => (<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M4.99998 24V9.33329C4.99998 3.99996 6.33331 2.66663 11.6666 2.66663H21C26.3333 2.66663 27.6666 3.99996 27.6666 9.33329V22.6666C27.6666 22.8533 27.6666 23.04 27.6533 23.2266" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M8.79998 20H27.6666V24.6667C27.6666 27.24 25.5733 29.3333 23 29.3333H9.66664C7.09331 29.3333 4.99998 27.24 4.99998 24.6667V23.8C4.99998 21.7067 6.70664 20 8.79998 20Z" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
   <path d="M11 9.33337H21.6666" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -174,7 +174,7 @@ export const Logo9 : React.FC<IconProps> = ({ className, ...rest }) => (<svg wid
   
 );  
 
-export const Star: React.FC<IconProps> = ({ className, ...rest }) => (
+export const Star: React.FC<IconProps> = ({...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
@@ -192,7 +192,7 @@ export const Star: React.FC<IconProps> = ({ className, ...rest }) => (
   </svg>
 );
 
-export const Dribble: React.FC<IconProps> = ({ className, ...rest }) => (
+export const Dribble: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -273,7 +273,7 @@ export const Dribble: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const LinkedInIcon2: React.FC<IconProps> = ({ className, ...rest }) => (
+export const LinkedInIcon2: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -291,7 +291,7 @@ export const LinkedInIcon2: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const TwitterIcon2: React.FC<IconProps> = ({ className, ...rest }) => (
+export const TwitterIcon2: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -308,7 +308,7 @@ export const TwitterIcon2: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const Rating: React.FC<IconProps> = ({ className, ...rest }) => (
+export const Rating: React.FC<IconProps> = ({className, ...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -326,7 +326,7 @@ export const Rating: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const Left: React.FC<IconProps> = ({ className, ...rest }) => (
+export const Left: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
@@ -346,7 +346,7 @@ export const Left: React.FC<IconProps> = ({ className, ...rest }) => (
 </svg>
 );
 
-export const Right: React.FC<IconProps> = ({ className, ...rest }) => (
+export const Right: React.FC<IconProps> = ({...rest }) => (
   <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlSpace="preserve"
